@@ -789,12 +789,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .project__item {
-        width: 280px;
+        width: 100%;
+        max-width: 413px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .project__item--content {
+        width: 100%;
         max-width: 532px;
         margin: 0;
     }
