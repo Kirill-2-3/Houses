@@ -39,7 +39,7 @@ $(function() {
         let scrollHeight = $(elementScroll).offset().top;
 
         $("html, body").animate({
-            scrollTop: scrollHeight
+            scrollTop: scrollHeight - 50
         }, 700);
 
         $(header).removeClass("show");
