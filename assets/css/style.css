@@ -1,0 +1,1102 @@
+body {
+    margin: 0;
+
+    font: 16px / 1.1 'Poiret One', cursive;
+    color: #fff;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p {
+    margin: 0 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+/* Page
+=========================*/
+
+.page {
+    min-width: 320px;
+
+    overflow: hidden;
+}
+
+
+
+/* Container
+=========================*/
+
+.container {
+    width: 100%;
+    max-width: 1340px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+
+
+/* Btn
+=========================*/
+
+.btn {
+    display: block;
+    width: 173px;
+    height: 37px;
+    padding: 9px 18px;
+
+    font: 17px / 1 'Montserrat Alternates', sans-serif;
+    color: #000;
+
+    background-color: #D8AD47;
+    border: 0;
+    border-radius: 19px;
+    box-shadow: 0 0 9px #D8AD47;
+    cursor: pointer;
+
+    transition: box-shadow .3s linear;
+}
+
+.btn:hover {
+    box-shadow: 0 0 20px #D8AD47;
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn--download {
+    width: 199px;
+    margin-top: 30px;
+}
+
+.btn--card {
+    width: 117px;
+    padding: 8px 15px;
+
+    background-color: transparent;
+    border: 2px solid #fff;
+    box-shadow: none;
+
+    color: #fff;
+
+    transition: background-color .3s linear, color .3s linear;
+}
+
+.btn--card:hover {
+    background-color: #D8AD47;
+    border-color: transparent;
+    box-shadow: 0 0 9px #D8AD47;
+
+    color: #000;
+}
+
+.btn--small {
+    width: 83px;
+    margin: 0 auto;
+}
+
+
+
+/* Burger
+=========================*/
+
+.burger {
+    display: none;
+    padding: 10px;
+    margin-top: 5px;
+    margin-right: -15px;
+
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+
+.burger__inner {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 3px;
+
+    background-color: #fff;
+}
+
+.burger__inner:before,
+.burger__inner:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+
+    background-color: #fff;
+}
+
+.burger__inner:before {
+    top: -7px;
+}
+
+.burger__inner:after {
+    top: 7px;
+}
+
+
+
+/* Intro
+=========================*/
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 764px;
+
+    background: url("../img/intro/intro-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.intro__content {
+    width: 100%;
+    max-width: 385px;
+
+    color: #fff;
+}
+
+.intro__title {
+    margin-bottom: 13px;
+
+    font: 600 28px / 1.2  'Montserrat Alternates', sans-serif;
+}
+
+.intro__text {
+    margin-bottom: 21px;
+
+    font: 16px / 1.1 'Poiret One', cursive;
+}
+
+
+
+/* Header
+=========================*/
+
+.header {
+    width: 100%;
+    padding: 45px 110px 0 71px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__title {
+    font: 29px / 1.1 'Poiret One', cursive;
+    color: #fff;
+
+    position: relative;
+}
+
+.header__title:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+    background-color: #FFD500;
+
+    position: absolute;
+    bottom: 4px;
+    right: -5px;
+    z-index: 1;
+}
+
+
+
+/* Nav
+=========================*/
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__link {
+    margin-right: 35px;
+
+    font: 16px / 1.1 'Poiret One', cursive;
+
+    transition: color .2s linear;
+}
+
+.nav__link:last-child {
+    margin-right: 0;
+}
+
+.nav__link:hover {
+    color: #D8AD47;
+}
+
+
+
+/* Content
+=========================*/
+
+.content__title  {
+    margin-bottom: 24px;
+
+    font: 600 28px / 1.2 'Montserrat Alternates', sans-serif;
+    color: #D8AD47;
+}
+
+.content__text {
+    font: 16px / 1.1 'Poiret One', cursive;
+    color: #fff;
+}
+
+.content__text p:last-child {
+    margin-bottom: 0;
+}
+
+/* About
+=========================*/
+
+.about {
+    padding: 35px 0 50px;
+
+    background-color: #020710;
+}
+
+.about__inner {
+    display: flex;
+}
+
+.about__us {
+    width: 100%;
+    max-width: 455px;
+
+    margin-bottom: 45px;
+}
+
+.about__item {
+    width: 100%;
+    max-width: 601px;
+}
+
+.about__item--house {
+    max-width: 670px;
+    margin-top: -25px;
+    margin-right: -50px;
+}
+
+.about__item--house img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+/* Build
+=========================*/
+
+.build__block {
+    width: 100%;
+    max-width: 455px;
+    padding-bottom: 42px;
+    margin-bottom: 56px;
+
+    border-bottom: 1px solid #707070;
+}
+
+.build__title {
+    margin-bottom: 11px;
+
+    font: 600 23px / 1.2 'Montserrat Alternates', sans-serif;
+}
+
+.build__description {
+    position: relative;
+}
+
+.build__photo {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: 1;
+}
+
+.build__photo img,
+.build__photo picture {
+    display: block;
+}
+
+.build__text {
+    padding-left: 125px;
+
+    font: 20px / 1.1 'Poiret One', cursive;
+    color: #D8AD47;
+}
+
+.build__text p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+/* Project
+=========================*/
+
+.project {
+    padding: 184px 0 90px;
+
+    background: url("../img/project/bg.jpg") center no-repeat;
+    background-size: cover;
+}
+
+.project__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project__item {
+    position: relative;
+    width: 413px;
+    margin-top: 44px;
+}
+
+.project__photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    opacity: .35;
+
+    transition: opacity .2s linear;
+}
+
+.project__item:hover .project__photo {
+    opacity: .6;
+}
+
+.project__item--content {
+    width: 100%;
+    max-width: 536px;
+    margin-top: 0;
+}
+
+.project__item--large {
+    width: 100%;
+    max-width: 700px;
+    margin-top: 0;
+}
+
+.project__photo--small {
+    display: none;
+}
+
+
+
+/* Card
+=========================*/
+
+.card__content {
+    width: 100%;
+    height: 100%;
+
+    padding: 17px 35px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.card__name {
+    margin-bottom: 5px;
+
+    font: 900 52px / 1.2 'Montserrat Alternates', sans-serif;
+    color: rgba(255, 255, 255, .8)
+}
+
+.card__name--large {
+    margin-bottom: 0;
+
+    font-size: 69px;
+}
+
+.card__square {
+    margin-bottom: 17px;
+
+    font: 800 31px / 1.2 'Montserrat Alternates', sans-serif;
+    color: #d8ad47;
+}
+
+.card__square--large {
+    font-size: 36px;
+}
+
+.card__square sup {
+    font-size: 14px;
+}
+
+.option__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    position: relative;
+}
+
+.option__icon {
+    margin-right: 10px;
+}
+
+.option__icon img {
+    display: block;
+}
+
+.option__content {
+    font: 17px / 1.1 'Montserrat Alternates', sans-serif;
+    color: #fff;
+}
+
+
+
+/* Footer
+=========================*/
+
+.contacts {
+    padding: 86px 0 130px;
+
+    background: url("../img/contacts/bg_02.jpg") center no-repeat;
+    background-size: cover;
+    border-bottom: 10px solid #040B18;
+}
+
+.contacts__inner {
+    display: flex;
+    margin: 0 -15px;
+}
+
+.contacts__item {
+    padding: 0 15px;
+    margin-right: 148px;
+}
+
+.contacts__item:last-child {
+    margin-right: 0;
+}
+
+.contacts__item--form {
+    width: 100%;
+    max-width: 466px;
+}
+
+.contacts__block {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 531px;
+    margin-top: 24px;
+}
+
+.contacts__map {
+    margin-right: 45px;
+}
+
+.contacts__map img {
+    display: block;
+}
+
+.info__item {
+    position: relative;
+
+    margin-bottom: 37px;
+}
+
+.info__item:last-child {
+    margin-bottom: 0;
+}
+
+.info__icon {
+    width: 26px;
+    height: 26px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    transform: translateY(-28%);
+
+    transition: fill .2s linear;
+
+    fill: #D8AD47;
+}
+
+.info__item:hover .info__icon {
+    fill: #ffcc54;
+}
+
+.info__text {
+    padding-left: 40px;
+}
+
+.contacts__info {
+    font: 16px / 1.1 'Poiret One', cursive;
+    color: #fff;
+}
+
+.svg__sprite {
+    fill: red;
+}
+
+
+
+/* Contacts form
+=========================*/
+
+.contacts__form {
+    padding: 28px 50px;
+
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 40px;
+}
+
+.form__text {
+    width: 100%;
+    max-width: 265px;
+    margin: 0 auto 27px;
+
+    font: 17px / 1.1 'Montserrat Alternates', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    margin-bottom: 27px;
+    padding-bottom: 5.5px;
+
+    font: 16px / 1.1 'Poiret One', cursive;
+    color: #fff;
+
+    background-color: transparent;
+    border: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.input:focus {
+    outline: 0;
+}
+
+.input::placeholder {
+    color: #fff;
+}
+
+
+
+/* Footer
+=========================*/
+
+.footer {
+    padding: 50px 0 40px;
+
+    background-color: #02070F;
+
+    text-align: center;
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 15px;
+
+    font: 29px / 1.1 'Poiret One', cursive;
+    color: #fff;
+
+    position: relative;
+}
+
+.footer__logo:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+
+    border-radius: 50%;
+    background-color: #FFD500;
+
+    position: absolute;
+    bottom: 4px;
+    right: -5px;
+    z-index: 1;
+}
+
+.copyright {
+    font: 12px / 1.1 'Poiret One', cursive;
+    color: #fff;
+}
+
+
+
+/* Media
+=========================*/
+
+@media (max-width: 1442px) {
+
+    /* Header */
+
+    .header {
+        padding: 45px 0 0;
+    }
+
+    .header__inner {
+        width: 100%;
+        max-width: 1340px;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 1340px) {
+
+   /* Project */
+
+   .project {
+       padding-top: 130px;
+   }
+
+   .project__inner {
+       justify-content: start;
+       margin: 0 -16px;
+   }
+
+   .project__item {
+       padding: 0 16px;
+   }
+
+   .project__item--content {
+        order: -2;
+   }
+
+   .project__item--content {
+       max-width: 487px;
+   }
+
+   .project__item--large {
+       margin-top: 44px;
+   }
+
+   .project__item--two {
+        margin: 0 auto;
+
+        order: -1;
+   }
+
+
+}
+
+@media (max-width: 1250px) {
+
+    /* Header */
+
+    .header {
+        padding-top: 35px;
+    }
+
+    .header__inner {
+       align-items: center;
+    }
+
+    /* Contacts */
+
+    .contacts__inner {
+        justify-content: space-between;
+    }
+
+    .contacts__item {
+        margin-right: 0;
+    }
+
+}
+
+@media (max-width: 976px) {
+
+    /* Header */
+
+    .header {
+        padding-top: 25px;
+    }
+
+    /* About */
+
+    .about__inner {
+        display: block;
+    }
+
+    .about__us {
+        max-width: 500px;
+    }
+
+    .build__block {
+        max-width: 500px;
+    }
+
+    .about__item {
+        max-width: 100%;
+    }
+
+    .about__item--house {
+        max-width: 620px;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    /* Project */
+
+    .project {
+        padding-top: 35px;
+    }
+
+    .project__item {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project__item--content {
+        max-width: 532px;
+        margin: 0;
+    }
+
+    .project__item--large {
+       margin-top: 70px;
+    }
+
+    .project__item--two {
+        margin: 44px auto 0;
+
+        order: 0;
+    }
+
+    /* Contacts */
+
+    .contacts {
+        padding: 35px 0 90px;
+    }
+
+    .contacts__inner {
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 70px 0 0;
+    }
+
+    .contacts__item {
+        padding: 0;
+    }
+
+    .contacts__item:last-child {
+        max-width: 436px;
+        margin-bottom: 50px;
+
+        order: -1;
+    }
+
+    .contacts__block {
+        max-width: 501px;
+        order: -2;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    /* Burger */
+
+    .burger {
+        display: block;
+    }
+
+    /* Intro */
+
+    .intro__title {
+        font-size: 26px;
+    }
+
+    /* Nav */
+
+    .nav {
+        display: none;
+    }
+
+    /* About */
+
+    .build__block {
+        margin-bottom: 40px;
+    }
+
+    .build__photo {
+        position: static;
+        margin-bottom: 15px;
+    }
+
+    .build__text {
+        padding-left: 0;
+    }
+
+    /* Project */
+
+    .project__inner {
+        margin: 0;
+    }
+
+    .project__item {
+        padding: 0;
+    }
+
+    .project__item--content {
+        max-width: 500px;
+    }
+
+    .project__item--large {
+        max-width: 413px;
+    }
+
+    .project__photo--large {
+        border-radius: 40px;
+    }
+
+    .project__photo--big {
+        display: none;
+    }
+
+    .project__photo--small {
+        display: block;
+    }
+
+    /* Card */
+
+    .card__name {
+        margin-bottom: 5px;
+
+        font-size: 42px;
+    }
+
+    .card__square {
+        font-size: 27px;
+    }
+
+
+}
+
+@media (max-width: 550px) {
+
+    /* Header */
+
+    .header__title {
+        font-size: 26px;
+    }
+
+    /* Intro */
+
+    .intro {
+        height: 100vh;
+    }
+
+    .intro__content {
+        max-width: 80%;
+    }
+
+    .intro__title {
+        font-size: 24px;
+    }
+
+    .intro__text {
+        font-size: 14px;
+    }
+
+    /* About */
+
+    .build__title {
+        font-size: 19px;
+    }
+
+    .build__text {
+        font-size: 17px;
+    }
+
+    .about {
+        padding-bottom: 30px;
+    }
+
+    /* Content */
+
+    .content__title {
+        font-size: 23px;
+    }
+
+    .content__text {
+        font-size: 15px;
+    }
+
+    /* Project */
+
+    .project {
+        padding-bottom: 50px;
+    }
+
+    /* Card */
+
+    .card__name {
+        font-size: 36px;
+    }
+
+    .card__square  {
+        font-size: 24px;
+    }
+
+    /* Contacts */
+
+    .contacts {
+        padding-bottom: 50px;
+    }
+
+    .contacts__inner  {
+        margin-top: 60px;
+    }
+
+    .contacts__block {
+        display: block;
+    }
+
+    .contacts__map {
+        margin: 0 0 40px 0;
+    }
+
+    .contacts__item:last-child {
+        margin-bottom: 40px;
+    }
+
+    /* Form */
+
+    .contacts__form {
+        padding: 25px 30px;
+    }
+
+    .form__text {
+        font-size: 15px;
+    }
+
+    /* Footer */
+
+    .footer {
+        padding: 30px 0;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    /* Intro */
+
+    .intro__content {
+        max-width: 100%;
+    }
+
+}
+
+
+@media (max-width: 370px) {
+
+    /* Intro */
+
+    .intro__title {
+        font-size: 20px;
+    }
+
+    .intro__text {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 340px) {
+
+    /* Content */
+
+    .content__title {
+        font-size: 20px;
+    }
+
+    .content__text {
+        font-size: 14px;
+    }
+
+    .build__title {
+        font-size: 17px;
+    }
+
+    /* Card */
+
+    .card__name {
+        margin-bottom: 0;
+
+        font-size: 33px;
+    }
+
+    .card__square {
+        margin-bottom: 10px;
+
+        font-size: 21px;
+    }
+
+    /* Form */
+
+    .form__text  {
+        font-size: 14px;
+    }
+
+    .footer__logo {
+        margin-bottom: 10px;
+
+        font-size: 25px;
+    }
+
+}
+
+@media (max-height: 400px) {
+
+    /* Intro */
+
+    .intro {
+        height: 500px;
+    }
+
+}
+
