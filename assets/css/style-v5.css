@@ -301,6 +301,8 @@ h1, h2, h3, h4, h5, h6 {
 .about__item {
     width: 100%;
     max-width: 601px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .about__item--house {
